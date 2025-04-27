@@ -1,9 +1,7 @@
 main {
-    flex: 1;
-    
     display: flex;
     justify-content: center;
-    align-items: stretch; /* flex items al 100% del padre */
+    align-items: stretch;
 
     section {
         flex: 1;
@@ -84,7 +82,7 @@ main {
             
                     padding-left: 0;
                     margin: 15px 0;
-                    box-shadow: 4px 4px 4px rgba(0,0,0, 0.2);
+                    box-shadow: 4px 4px 4px rgba(0,0,0, 0.4);
                     i {
                         font-size: 1.5em;
                         padding: 5px 15px;
@@ -95,7 +93,6 @@ main {
                     height: 50px;
                     padding: 15px;
                     border: none;
-                    box-shadow: 4px 4px 4px rgba(0,0,0, 0.2);
                 }
                 input[type="checkbox"] {
                     height: 20px;
@@ -107,6 +104,8 @@ main {
                     font-size: 1.2em;
                     font-weight: bold;
 
+                    box-shadow: 4px 4px 4px rgba(0,0,0, 0.4);
+                    
                     transition: 0.2s;
                     &:hover {
                         background-color: black;

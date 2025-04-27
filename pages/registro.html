@@ -13,41 +13,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/registro.css">
+    <link rel="stylesheet" href="../styles/authentication.css">
 
     <link rel="shortcut icon" href="../src/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <h1 class="logo">UADE<span>Academy</span></h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
+        <section class="left">
+            <div class="container">
+                <div>
+                    <h1>Bienvenido a AUDE Academy</h1>
+                    <p>La academia donde Alumnos y Docentes estudian y enseñan, respectivamente.</p>
+                </div>
+                <img class="artwork" src="../src/images/kandinsky.png" alt="art">
+                <article class="people">
+                    <div class="miniatures">
+                        <img src="../src/images/Joaquin_Alvarez.jpg" alt="Usuario">
+                        <img src="../src/images/Joaquin_Alvarez.jpg" alt="Usuario">
+                        <img src="../src/images/Joaquin_Alvarez.jpg" alt="Usuario">
+                        <img src="../src/images/Joaquin_Alvarez.jpg" alt="Usuario">
+                    </div>
+                    <p>+1000 Alumnos y docentes satisfechos</p>
+                </article>
+            </div>
+        </section>
+        <section class="right">
+            <h2>Registro</h2>
+            <p>Bienvenid@ a nuestro sistema, por favor indique sus datos.</p>
+            <form>
+                <label for="email">email *</label>
+                <div class="field">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" name="email" id="email" placeholder="email">
+                </div>
 
+                <label for="nombreUsuario">Nombre de usuario *</label>
+                <div class="field">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="nombre de usuario">
+                </div>
+
+                <label for="password">Contaseña *</label>
+                <div class="field">
+                    <i class='bx bxs-key' ></i>
+                    <input type="password" name="password" id="password" placeholder="contraseña">
+                </div>
+
+                <label for="confirmPassword">Confirmar Contaseña *</label>
+                <div class="field">
+                    <i class='bx bxs-key' ></i>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="confirmar contraseña">
+                </div>
+
+                <div class="secondary">
+                    <input type="checkbox" name="RememberMe" id="RememberMe">
+                    <label for="termsConditions">Acepto los <a href="#">términos y condiciones</a></label>
+                </div>
+
+                <input type="submit" value="Registro">
+            </form>
+            <a href="login.html">Si ya tenés una cuenta, hacé click acá</a>
+        </section>
     </main>
-
-    <footer>
-        <p>UADE Academy © - 2025 - Todos los derechos reservados</p>
-        <div class="socials">
-            <i class='bx bxl-instagram-alt'></i>
-            <i class='bx bxl-twitch' ></i>
-            <i class='bx bxl-twitter' ></i>
-            <h2 class="logo">UADE<span>Academy</span></h2>
-        </div>
-    </footer>
 </body>
 </html>

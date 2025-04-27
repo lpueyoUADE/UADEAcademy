@@ -10,7 +10,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/contacto.css">
@@ -37,17 +39,89 @@
     </header>
 
     <main>
+        <section class="info">
+            <header>
+                <h2>Contactanos!</h2>
+                <p>Podés encontrarnos en los siguientes medios:</p>
+            </header>
+            <div class="container">
+                <article>
+                    <h3>UADE</h3>
+                    <p><i class='bx bxs-map' ></i> <a href="#">Direccion</a></p>
+                    <p><i class='bx bxs-phone' ></i> <a href="#">Téléfono</a></p>
+                    <p><i class='bx bxs-envelope' ></i> <a href="#">Mail</a></p>
+                </article>
+                <article>
+                    <h3>UADE</h3>
+                    <p><i class='bx bxs-map' ></i> <a href="#">Direccion</a></p>
+                    <p><i class='bx bxs-phone' ></i> <a href="#">Téléfono</a></p>
+                    <p><i class='bx bxs-envelope' ></i> <a href="#">Mail</a></p>
+                </article>
+                <article>
+                    <h3>UADE</h3>
+                    <p><i class='bx bxs-map' ></i> <a href="#">Direccion</a></p>
+                    <p><i class='bx bxs-phone' ></i> <a href="#">Téléfono</a></p>
+                    <p><i class='bx bxs-envelope' ></i> <a href="#">Mail</a></p>
+                </article>
+            </div>
+        </section>
+        <section class="form">
+            <section class="left">
+                <img src="../src/images/microestadio-1.jpg" alt="Microestadio">
+                <div class="redes">
+                    <p>seguinos en: </p>
+                    <div>
+                        <i class='bx bxl-instagram-alt'></i>
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-twitch'></i>
+                    </div>
+                </div>
+            </section>
+            <section class="right">
+                <h2>Envianos un mensaje</h2>
+                <p>
+                    Para consultas administrativas, cursos y aranceles por favor completá con tus datos y consulta
+                </p>
+                <form action="">
+                    <label for="email">email *</label>
+                    <div class="field">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" name="email" id="email" placeholder="email">
+                    </div>
 
+                    <label for="nombre">nombre *</label>
+                    <div class="field">
+                        <i class='bx bxs-user'></i>
+                        <input type="text" name="nombre" id="nombre" placeholder="nombre">
+                    </div>
+                    
+                    <label for="mensaje">mensaje *</label>
+                    <div class="field">
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </section>
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13135.940087731358!2d-58.39351367864406!3d-34.604540255557566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaba6ac89b35%3A0x1a2dc24cbca665a7!2sUADE!5e0!3m2!1ses!2sar!4v1745701012115!5m2!1ses!2sar"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
 
     <footer>
         <p>UADE Academy © - 2025 - Todos los derechos reservados</p>
         <div class="socials">
             <i class='bx bxl-instagram-alt'></i>
-            <i class='bx bxl-twitch' ></i>
-            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-twitch'></i>
+            <i class='bx bxl-twitter'></i>
             <h2 class="logo">UADE<span>Academy</span></h2>
         </div>
     </footer>
 </body>
+
 </html>
