@@ -84,6 +84,8 @@ body {
 
     main {
         flex: 1;
+        align-self: center;
+        width: 80%;
     }
 }
 
@@ -96,9 +98,6 @@ body {
         margin-left: 3px;
     }
 }
-
-
-
 
 footer {
     display: flex;

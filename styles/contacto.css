@@ -1,12 +1,8 @@
 main {
-    align-self: center;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 80%;
 
     >section {
         min-height: 30vh;

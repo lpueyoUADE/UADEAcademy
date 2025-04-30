@@ -1,0 +1,187 @@
+main {
+
+    section {
+        margin: 50px 0;
+    }
+
+    .categoria h3 {
+        font-size: 2em;
+    }
+
+    .portada {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        p {
+            font-weight: 200;
+        }
+    }
+
+    .cursos {    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        .curso {
+            text-decoration: none;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            background-color: tomato;
+            border-radius: 15px;
+        
+            width: 275px;
+            height: 400px;
+
+            box-shadow: 4px 4px 4px black;
+
+            transition: 0.2s;
+
+            &:hover {
+                box-shadow: 4px 4px 4px var(--main);
+            }
+
+            .portada, .cuerpo {
+                flex: 1;
+            }
+
+            .portada {
+                overflow: hidden;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+
+                img {
+                    width: 100%;
+                }
+            }
+            .cuerpo {
+                background-color: white;
+                color: var(--black);
+                padding: 15px;
+                
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+                display: grid;
+                grid: 
+                'pildora favorito'
+                'titulo titulo'
+                'desc desc'
+                'hr hr'
+                'inicio precio';
+
+                grid-template-columns: 8fr 4fr;
+                grid-template-rows: 1fr 1fr 2fr 5px 0.5fr;
+
+                gap: 5px;
+                
+                .pildoraContainer   { grid-area: pildora; }
+                .favorito           { grid-area: favorito; }
+                h4                  { grid-area: titulo; }
+                .descripcion        { grid-area: desc; }
+                hr                  { grid-area: hr; }
+                .fechaInicio        { grid-area: inicio; } 
+                .costo              { grid-area: precio; }
+
+                .pildoraContainer, .favorito, h4, .descripcion, .fechaInicio, .costo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .pildoraContainer {
+                    justify-content: flex-start;
+
+                    .pildora {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        padding: 5px;
+
+                        border-radius: 7px;
+                        font-size: 0.8em;
+                        &.basico {
+                            background-color: orange;
+                            color: #a52c00;
+                        }
+
+                        &.intermedio {
+                            background-color: greenyellow;
+                            color: #3d6600;
+                        }
+
+                        &.avanzado {
+                            background-color: dodgerblue;
+                            color: #003263;
+                        }
+                    }
+                }
+
+                h4 {
+                    justify-content: flex-start;
+                    font-size: 1.2em;
+                }
+
+                .descripcion {
+                    justify-content: flex-start;
+                    font-size: 0.8em;
+                }
+
+                .favorito {
+                    justify-content: flex-end;
+                    font-size: 1.2em;
+
+                    transition: 0.3s;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &.bx-heart { /* no favorito */
+                        color: black;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+
+                    &.bxs-heart { /* favorito */
+                        color: red;
+
+                        &:hover {
+                            color: lightcoral;
+                        }
+                    }
+                }
+
+                hr {
+                    border: 0;
+                    border-top: 1px solid;
+                    opacity: 0.25;
+                }
+
+                .fechaInicio {
+                    justify-content: flex-start;
+                    font-size: 0.7em;
+                    color: #777;
+                }
+
+                .costo {
+                    justify-content: flex-end;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
