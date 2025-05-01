@@ -1,0 +1,34 @@
+.ancla {
+    position: fixed;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    text-decoration: none;
+    font-size: 3em;
+    color: var(--main);
+
+    transition: 0.2s;
+    &:hover {
+        color: white;
+    }
+
+    &.scrolleable {
+        opacity: 0;
+    }
+
+    &.abajo-derecha {
+        bottom: 75px;
+        right: 50px;
+    }
+
+    &.arriba-izquierda {
+        top: 75px;
+        left: 35px;
+    }
+}

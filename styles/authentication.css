@@ -1,7 +1,9 @@
-main {
+body main {
     display: flex;
     justify-content: center;
     align-items: stretch;
+
+    width: 100%;
 
     section {
         flex: 1;
