@@ -1,0 +1,24 @@
+.pildora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+
+    border-radius: 7px;
+    font-size: 0.8em;
+    &.basico {
+        background-color: orange;
+        color: #a52c00;
+    }
+
+    &.intermedio {
+        background-color: greenyellow;
+        color: #3d6600;
+    }
+
+    &.avanzado {
+        background-color: dodgerblue;
+        color: #003263;
+    }
+}
